@@ -1,49 +1,114 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <html lang="pt-br">
 
-    <head>
-        <!--Isto é um comentário-->
+<head>
+    <meta charset="UTF-8">
+    <title>Primeiro documento html</title>
+</head>
 
-        <meta charset="UTF-8">
-
-        <title>Primeiro documento html</title>
-
-    </head>
-
-    <body>
-        <p>Isto é um parágrafo</p>
-
-        <h1>Isto é um h1</h1> <!--mais importante, só pode usar uma vez-->
-        <h2>Isto é um h2</h2>
-        <h3>Isto é um h3</h3>
-        <h4>Isto é um h4</h4>
-        <h5>Isto é um h5</h5>
-        <h6>Isto é um h6</h6> <!--menos importante-->
-
-        <h2>lista ordenada</h2>
-            <ol type="A"> <!--<type> especifica o tipo de odernação desejada, como: "A" ou "a", ordem alfabética, "I", algarismos romanos.-->
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ol>
-
-        <h2>lista desordenada</h2>
-            <ul> <!--(tag)>(tag)*(quant. vezes)-->
-                <li>item 1</li> <!--(tag)*(quant. vezes)-->
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-
-        <p>Isto é uma alteração no repositório</p>
-
-        <img src="https://images.ecycle.com.br/wp-content/uploads/2022/07/19114636/fatty-corgi-Zn5chZcnFRA-unsplash-scaled.jpg.webp" width="500px" alt="cachorro">
-        <br> <!-- pula linha-->
-        <img src="img/cachorro_corgi.jpg" width="400px" alt="cachorro"> <!--../ para subir o nível da pasta e / para entrar na pasta-->
-
-        <p><3</p>
-        <p>Isto é a segunda alteração</p>
-
-    </body>
+<body>
+    <!--Isto é um comentário-->
+    <p>
+        Isto é um <b>parágrafo.</b>
+    </p>
+    <p> A tag <b>b</b> e a tag <strong>strong</strong> passam relevância para uma determinada palavra ou parte de um
+        texto.
+    </p>
+    <h1>Isto é um h1.</h1>
+    <!--mais importante, só pode usar uma vez-->
+    <h2>Isto é um h2.</h2>
+    <h3>Isto é um h3.</h3>
+    <h4>Isto é um h4.</h4>
+    <h5>Isto é um h5.</h5>
+    <h6>Isto é um h6.</h6>
+    <!--menos importante-->
+    <h2>lista ordenada:</h2>
+    <ol type="A">
+        <!--<type> especifica o tipo de odernação desejada, como: "A" ou "a", ordem alfabética, "I", algarismos romanos.-->
+        <li>item 1.</li>
+        <li>item 2.</li>
+        <li>item 3.</li>
+    </ol>
+    <h2>lista desordenada:</h2>
+    <ul>
+        <!--(tag)>(tag)*(quant. vezes)-->
+        <li>item 1.</li>
+        <!--(tag)*(quant. vezes)-->
+        <li>item 2.</li>
+        <li>item 3.</li>
+    </ul>
+    <p>
+        Isto é uma alteração no repositório.
+    </p>
+    <img src="https://images.ecycle.com.br/wp-content/uploads/2022/07/19114636/fatty-corgi-Zn5chZcnFRA-unsplash-scaled.jpg.webp"
+        width="500px" alt="cachorro">
+    <br> <!-- pula linha-->
+    <img src="img/cachorro_corgi.jpg" width="400px" alt="cachorro">
+    <!--../ para subir o nível da pasta e / para entrar na pasta-->
+    <p>Isto é a segunda alteração.</p>
+    <h2>Tabelas</h2>
+    <table border="1px"> <!-- a tag border não deveria estar aqui-->
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Nascimento</th>
+            <th>Cidade</th>
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>32</td>
+            <td>24/03/1991</td>
+            <td rowspan="2">Santos</td>
+        </tr>
+        <tr>
+            <td>Letícia</td>
+            <td>16</td>
+            <td>09/04/2007</td>
+        </tr>
+        <tr>
+            <td colspan="4">Verifique os dados</td>
+        </tr>
+        <tr>
+            <td colspan="3">mesclar</td>
+            <td>resto</td>
+        </tr>
+        <tr>
+            <td>resto</td>
+            <td colspan="3"> mesclar</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Tabela Automóvel</h2>
+    <table border="1px">
+        <tr>
+            <th>marca</th>
+            <th>modelo</th>
+            <th>ano</th>
+            <th>valor</th>
+        </tr>
+        <tr>
+            <td>volkswagen</td>
+            <td>golf</td>
+            <td>2009</td>
+            <td>R$38.500</td>
+        </tr>
+        <tr>
+            <td>fiat</td>
+            <td>palio</td>
+            <td>2010</td>
+            <td>R$19.700</td>
+        </tr>
+        <tr>
+            <td>honda</td>
+            <td>civic</td>
+            <td>2012</td>
+            <td>R$61.500</td>
+        </tr>
+        <tr>
+            <td colspan="4">O melhor preço da região</td>
+        </tr>
+    </table>
+</body>
 
 </html>
